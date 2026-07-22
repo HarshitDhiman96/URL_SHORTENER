@@ -1,0 +1,9 @@
+# Ignore the specific .env file in the root directory
+/.env
+
+# Ignore any .env file anywhere in the project
+.env
+
+# Ignore all variations (e.g., .env.local, .env.development, .env.production)
+.env.*
+*.env
