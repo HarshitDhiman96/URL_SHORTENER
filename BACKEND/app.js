@@ -18,7 +18,8 @@ const app = express();
 app.use(cors({
     origin: [
       'http://localhost:5173',
-      'https://url-shortener-liart-kappa.vercel.app'
+      'https://url-shortener-liart-kappa.vercel.app',
+      'https://url-shortener-git-main-harshitdhiman96s-projects.vercel.app'
     ],
     credentials: true // 👈 this allows cookies to be sent
 }));
