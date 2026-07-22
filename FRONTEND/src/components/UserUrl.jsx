@@ -48,9 +48,21 @@ const UserUrl = () => {
     )
   }
 
+  const totalUrls = urls.urls.length
+
   return (
     <div className="bg-white rounded-lg mt-5 shadow-md overflow-hidden">
-      
+      <div className="p-6 border-b border-gray-200">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h2 className="text-xl font-semibold text-gray-900">Your URL history</h2>
+            <p className="text-sm text-gray-500">Total shortened URLs: {totalUrls}</p>
+          </div>
+          <div className="inline-flex items-center rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800">
+            {totalUrls} {totalUrls === 1 ? 'link' : 'links'} shortened
+          </div>
+        </div>
+      </div>
       <div className="overflow-x-auto h-56">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
